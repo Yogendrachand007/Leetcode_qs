@@ -4,14 +4,14 @@ public:
      
         sort(nums.begin(),nums.end());
         
-//         for(int i=0 ;i<nums.size(); i++)
-//         {
-//             if(nums[i]==nums[i+1])
-//             {
-//                 return true;
-//             }
-//         }
-//         return false;
+        bool flag =false;
+        
+        for(int i=0 ;i<nums.size()-1; i++)
+        {
+            if(nums[i]==nums[i+1])
+                return true;
+        }
+        return flag;
         
 //         for(int i=0;i<nums.size()-1;i++)
 //         {
@@ -23,11 +23,6 @@ public:
 //         }
 //         return false;
         
-         sort(nums.begin(),nums.end());
-        bool flag = false;
-        for(int i =0;i<nums.size()-1;i++){
-            if(nums[i] == nums[i+1]) return true;
-        }
-        return flag;
+        
     }
 };
