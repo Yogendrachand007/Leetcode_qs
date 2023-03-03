@@ -1,18 +1,25 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-       
-        int minSoFar=prices[0];
-        int max_profit = 0;
-
-        for(int i=0;i<prices.size();i++)
+        
+        int profittoday=0,result=0;
+        int min = INT_MAX; // compares 999 with largest number in an array then stores in it ...miin = 7
+        int n = prices.size();
+        
+        for(int i=0;i<n;i++)
         {
-            minSoFar = min(minSoFar, prices[i]);
-            int profit = prices[i] - minSoFar;
-            max_profit = max(max_profit, profit);
+            if(min>prices[i])
+            min = prices[i];
+            
+          profittoday = prices[i]- min;
+            
+            
+          if(result < profittoday)
+              result  = profittoday;
+              
         }
-        return max_profit;
-       
-
+        
+        return result;
+        
     }
 };
