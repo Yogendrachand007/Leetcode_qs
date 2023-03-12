@@ -10,7 +10,7 @@ public:
         for(int i=0;i<nums1.size();i++)
         {
             if(i>0 && nums1[i-1]==nums1[i])
-                continue;
+                continue;  // breaks one iteration
             for(int j=0;j<nums2.size();j++)
             {
                 if(nums1[i]==nums2[j]){
@@ -22,11 +22,3 @@ public:
   return ans;
     }
 };
-
-//  for(int i=0;i<m;i++){
-//             if(i>0&& nums1[i-1]==nums1[i])
-//              continue;
-//             for(int j=0;j<n;j++){
-//                 if(nums1[i]==nums2[j]){
-//                     ans.push_back(nums1[i]);
-//                     break;
