@@ -15,7 +15,7 @@ public:
                {
                 for(int k=0;k<n;k++)
                 {
-                ans[i][k]=0;
+                ans[i][k]=0;  // Left and right column to be 0
                 }
                }
             }
@@ -26,9 +26,9 @@ public:
              {
             if(matrix[i][j]==0)
               {
-                for(int k=0;k<m;k++)
+                for(int k=0;k<m;k++)   // loop for row
                 {
-                ans[k][j]=0;
+                ans[k][j]=0;  // top and bottom to be 0 
                 }
               }
              }
