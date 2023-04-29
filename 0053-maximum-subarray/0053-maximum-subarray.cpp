@@ -14,7 +14,7 @@ public:
             maxi=sum;    // then compare 
         }
             
-        if(sum<0)        // if smaller than 0 so more i++
+        if(sum<0) //biggest catch in this question  // if smaller than 0 so more i++
             sum=0;       
     }
         return maxi;        
