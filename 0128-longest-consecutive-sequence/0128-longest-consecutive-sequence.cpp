@@ -16,7 +16,7 @@ public:
             int count=0;
             if(s.find(prev_ele)==s.end()) // means prev ele NOT found from 1st till end then....
             {
-                while(s.find(curr_ele)!=s.end())  // 
+                while(s.find(curr_ele)!=s.end())  // not found prev ele,  so start a chain with that curr ele
                 {
                     curr_ele++;
                     count++;
