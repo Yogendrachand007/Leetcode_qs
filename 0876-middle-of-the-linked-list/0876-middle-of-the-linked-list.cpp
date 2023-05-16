@@ -14,14 +14,14 @@ public:
         
         ListNode *hare;
         ListNode *tortoise;
-        hare=tortoise=head;
+        hare=tortoise=head; // every pointer pointing to head;// 1st element
         
         while(hare&&hare->next!=NULL)
         {
-            hare=hare->next->next;
-            tortoise=tortoise->next;
+            hare=hare->next->next;  // if next not null so next next appoint the value
+            tortoise=tortoise->next; // move only one step ahead;
         }
-        return tortoise;
+        return tortoise; // for every 2 step move 1 step for tortoise  
         
         
     }
